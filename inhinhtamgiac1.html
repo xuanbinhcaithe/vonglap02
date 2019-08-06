@@ -1,0 +1,25 @@
+<!DOCTYPE  html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>vẽ hình tam giác 01</title>
+</head>
+<body>
+<div>
+    <input type="text" id="inputvalue"  >
+    <input type="button" onclick="function1()" value="CLICK">
+</div>
+    <script>
+        function function1() {
+            let number =parseInt(document.getElementById("inputvalue").value);
+            for (let i = 1; i <= number; i++) {
+                for (let j = 1; j <= i; j++) {
+                    document.write("* ");
+                }
+                document.write("<br>");
+            }
+        }
+
+    </script>
+</body>
+</html>

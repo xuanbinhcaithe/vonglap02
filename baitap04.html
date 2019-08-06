@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in hình chữ nhật</title>
+</head>
+<body>
+    <input type="text" id="chieucao"><br>
+    <input type="text" id="chieudai"><br>
+    <button type="button" onclick="function1()">CLICK</button>
+    <script>
+        function function1() {
+            let chieucao =parseInt(document.getElementById("chieucao").value);
+            let chieudai=parseInt(document.getElementById("chieudai").value);
+        for (let i=1;i<=chieucao;i++) {
+            for (let j=1 ;j<=chieudai;j++) {
+                if (j>=2 && j<=(chieudai-1) && i>=2 && i<=(chieucao-1)) {
+                    document.write("&nbsp&nbsp&nbsp");
+                }else {
+                document.write("* ");}
+            }
+            document.write("<br>");
+        }
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

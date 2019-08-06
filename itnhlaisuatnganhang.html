@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính lãi suất ngân hàng</title>
+</head>
+<body>
+<!-- tính lãi suất ngân hàng theo số tiền ban đầu , số tháng cho vay và lãi suất hàng tháng
+vd lãi suat là 0.5%-->
+    <input type="text" id="sotienbandau"><br>
+    <input type="text" id="sothang"><br>
+    <input type="button" onclick="tinhToan()" value="CLICK"><br>
+    <p id="display"></p>
+    <script>
+        function tinhToan() {
+            let tienbandau=parseInt(document.getElementById("sotienbandau").value);
+            console.log(tienbandau);
+            let month=parseInt(document.getElementById("sothang").value);
+            for (let i=1;i<=month;i++) {
+                tienbandau=tienbandau+tienbandau*0.5/100;
+            }
+            document.getElementById("display").innerHTML="số tiền của bạn là "+tienbandau;
+        }
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

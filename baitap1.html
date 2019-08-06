@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 1</title>
+</head>
+<body>
+    <!--in dãy finonaci -->
+<input type="text" id="number" >
+<button type="button" onclick="function1()" >click</button>
+<script>
+    function function1() {
+        let number=parseInt(document.getElementById("number").value);
+        let b=0;
+        let a=1;
+        let temp=0;
+        for (let i=1;i<=number;i++) {
+            temp=a;
+            a=a+b;
+            b=temp;
+            document.write(temp+"<br>");
+        }
+    }
+</script>
+
+</body>
+</html>

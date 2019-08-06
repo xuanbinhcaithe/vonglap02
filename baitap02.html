@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 02</title>
+</head>
+<body>
+<p>GIAI THỪA CỦA:</p>
+ <input type="text" id="display">
+<button type="button" onclick="tinhtoan()" >LÀ</button>
+<P id="hienthi"></P>
+<script>
+    function tinhtoan() {
+        let number = parseInt(document.getElementById("display").value);
+        let result = 1;
+        for (let i = 1; i <= number; i++) {
+            result *= i;
+        }
+        document.getElementById("hienthi").innerHTML=result;
+    }
+</script>
+
+</body>
+</html>

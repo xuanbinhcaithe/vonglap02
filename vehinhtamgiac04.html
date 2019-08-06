@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> VẼ HÌNH TAM GIÁC 04</title>
+</head>
+<body>
+    <input type="text" id="inputvalue">
+    <input type="button" onclick="function1()" value="CLICK">
+    <script>
+        function function1() {
+            let number=parseInt(document.getElementById("inputvalue").value);
+            for (let i = 1; i <= number; i++) {
+                for (let j = 1; j <=i; j++) {
+                    document.write("&nbsp&nbsp");
+                }
+                for (let x = number; x >= i; x--) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+
+    </script>
+
+</body>
+</html>
